@@ -1,0 +1,95 @@
+.Main-container {
+    background-color: #000000;
+    color: #ffffff;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0.5px;
+}
+
+.Main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.Main-i {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.Main-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #e0e0e0;
+}
+
+.Change-text {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #6350ff, #8c52ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.cursor {
+    display: inline-block;
+    width: 1ch;
+    background-color: #6350ff;
+    margin-left: 2px;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+
+.Main-photo {
+    margin-left: 100px;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    
+}
+
+.Main-photo>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    display: block;
+}
+
+.Main-photo::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 100%;
+    border: 4px solid #8c52ff; 
+    box-shadow: 0 0 20px #8c52ff, 0 0 40px #8c52ff, 0 0 60px #8c52ff;
+    animation: neonPulse 2s infinite alternate;
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 10px #8c52ff, 0 0 10px #8c52ff, 0 0 20px #8c52ff;
+        transform: scaleY(-2px);
+    }
+    100% {
+        box-shadow: 0 0 20px #b584ff, 0 0 40px #b584ff, 0 0 40px #b584ff;
+        transform: scaleY(2px);
+    }
+}
