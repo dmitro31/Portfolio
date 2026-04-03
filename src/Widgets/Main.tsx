@@ -66,7 +66,7 @@ export default function Main() {
     }, [index, isDeleting]); // texts краще винести, щоб не додавати сюди
 
     return (
-        <div className="Main-container">
+        <div className="Main-container" id="home">
             <div className="Main">
                 <div className="Main-i">
                     <h2 className="Main-title">
