@@ -1,0 +1,51 @@
+.Service-container{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3 , 300px);
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.service-card{
+    background-color: rgb(54, 54, 54);
+    height: 350px;
+    border-radius: 14px;
+    text-align: center;
+    align-items: center;
+}
+.icon{
+    color:#8c52ff;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 135px;
+}
+.Serv-buttActive{
+    background: white;
+    width: 90%;
+    height: 90%;
+    max-width: 1000px;
+    max-height: 900px;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease-out;
+}
+.service-card:hover{
+    border: 3px solid #8c52ff;
+    box-shadow: 0 0 10px #8c52ff, 0 0 20px #8c52ff, 0 0 30px #8c52ff;
+    animation: neonPulse 2s infinite alternate;
+}
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 10px #8c52ff, 0 0 15px #8c52ff, 0 0 30px #8c52ff;
+        transform: scaleY(-2px);
+    }
+    100% {
+        box-shadow: 0 0 20px #b584ff, 0 0 40px #b584ff, 0 0 40px #b584ff;
+        transform: scaleY(2px);
+    }
+}

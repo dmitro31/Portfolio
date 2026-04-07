@@ -3,7 +3,6 @@ import "../Style/Main.css";
 import Photo from "../Photo/photo_2026-04-01_21-16-48.jpg";
 
 export default function Main() {
-    // Винесено за межі компонента або в useMemo, щоб не перестворювати масив
     const texts = ["Designer", "Developer", "Full Stack Developer"];
 
     const [index, setIndex] = useState(0);
@@ -16,7 +15,7 @@ export default function Main() {
         const currentText = texts[index];
         const typingSpeed = 150;
         const deletingSpeed = 100;
-        const pauseTime = 1500; // Трохи збільшимо паузу для читабельності
+        const pauseTime = 1500; 
 
         let frameId: number;
 
@@ -32,7 +31,6 @@ export default function Main() {
                 setDisplayedText(currentText.slice(0, nextLength));
 
                 if (nextLength === currentText.length) {
-                    // Пауза перед видаленням
                     setTimeout(() => {
                         setIsDeleting(true);
                         startTimeRef.current = null;
@@ -63,10 +61,10 @@ export default function Main() {
             cancelAnimationFrame(frameId);
             startTimeRef.current = null;
         };
-    }, [index, isDeleting]); // texts краще винести, щоб не додавати сюди
+    }, [index, isDeleting]);
 
     return (
-        <div className="Main-container" id="home">
+         <div className="Main-container" id="home">
             <div className="Main">
                 <div className="Main-i">
                     <h2 className="Main-title">
@@ -79,7 +77,7 @@ export default function Main() {
                     <div className="Main-info">
                         <p>Розробник, захоплений створенням інноваційних цифрових рішень.</p>
                         <p>
-                            З невеликим досвідом роботи у веб-розробці та дизайні,<br/> але я готовий вивчати багато чого нового,
+                            З досвідом роботи у веб-розробці та дизайні,<br/> але я готовий вивчати багато чого нового,
                             а також допомогти втілити вашу ідею в реальність.
                         </p>
                     </div>

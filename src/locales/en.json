@@ -1,0 +1,21 @@
+{
+  "services": {
+    "title": "Services",
+    "webDeveloper": "I build websites and web apps that deliver results: fast, responsive, modern features.",
+    "uiuxDesigner": "Designing intuitive and attractive interfaces to increase user engagement.",
+    "contentWriter": "Creating compelling content for websites, blogs, and landing pages.",
+    "backendDeveloper": "Developing stable backend, APIs, and database integration.",
+    "seoSpecialist": "Optimizing sites to rank higher in Google and attract more traffic.",
+    "websiteSupport": "Full website maintenance, updates, and performance improvements."
+  },
+  "order": "Order Now"
+  ,
+  "about" : {
+    "title" : "About me" ,
+    "text" : "I am a full-stack developer with practical experience in creating modern web applications using HTML, CSS, JavaScript, React, Node.js, Express and MongoDB. I am interested in combining functionality and design to make it convenient and enjoyable for users to interact with the product. I am responsible, sociable and always eager to learn new things, quickly mastering modern technologies and approaches. I like working in a team, solving complex tasks and finding creative solutions. I have a good sense of humor, which helps maintain a friendly atmosphere during joint work."
+  } ,
+  "main" : {
+    "p1" : "A developer passionate about creating innovative digital solutions.",
+    "p2" : "With little experience in web development and design, but I am ready to learn a lot of new things, as well as help bring your idea to life."
+  }
+}

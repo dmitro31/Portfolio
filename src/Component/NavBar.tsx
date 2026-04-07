@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react"
+import "../Style/NavBar.css"
 
-const sections = ["home", "about", "services", "projects", "contacts"]
+const sections = ["home", "about", "services", "projects" , "contacts"]
 
 export default function NavBar() {
     const [active, setActive] = useState("home")
 
     useEffect(() => {
         const handleScroll = () => {
-            const scrollPos = window.scrollY + 80 // 80 = висота хедера
+            const scrollPos = window.scrollY + 80 
             let current = "home"
             sections.forEach(id => {
                 const section = document.getElementById(id)
@@ -23,10 +24,10 @@ export default function NavBar() {
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
 
-    const scrollToSection = id => {
+    const scrollToSection =(id: string) => {
         const el = document.getElementById(id)
         if (el) {
-            const top = el.offsetTop - 70 // щоб хедер не перекривав
+            const top = el.offsetTop - 70 
             window.scrollTo({ top, behavior: "smooth" })
         }
     }

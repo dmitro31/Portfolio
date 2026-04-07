@@ -1,0 +1,75 @@
+.Project-container{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3 , 300px);
+    gap: 40px;
+    color: white;
+    padding: 150px 20px 50px;
+    max-width: auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.Project-cart{
+    background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Project-cart:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(128, 0, 255, 0.4);
+}
+
+.Project-Photo{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.Project-Photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.Project-cart:hover .Project-Photo img{
+    transform: scale(1.1);
+}
+
+.Project-name{
+    font-size: 20px;
+    margin: 15px 20px 5px;
+}
+
+.Project-cart p{
+    font-size: 14px;
+    color: #ccc;
+    margin: 0 20px 15px;
+    line-height: 1.4;
+}
+
+.Project-href{
+    margin: 0 20px 20px;
+}
+
+.Project-href a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #7b2ff7, #9b4dff);
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.Project-href a:hover{
+    background: linear-gradient(90deg, #9b4dff, #7b2ff7);
+    transform: scale(1.05);
+}
