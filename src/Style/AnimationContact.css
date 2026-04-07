@@ -41,3 +41,32 @@
     0% { transform: rotate(calc(45deg * var(--i))) translateX(var(--radius)) rotate(calc(-45deg * var(--i))); }
     100% { transform: rotate(calc(405deg + 45deg * var(--i))) translateX(var(--radius)) rotate(calc(-405deg - 45deg * var(--i))); }
 }
+/* Для планшетів */
+@media (max-width: 1024px) {
+  .ContactAnim-container {
+    height: 600px;
+    padding: 20px;
+  }
+
+  .circle-item {
+    width: 60px;
+    height: 60px;
+    margin: -30px;
+    --radius: 120px; /* зменшений радіус */
+  }
+}
+
+/* Для телефонів */
+@media (max-width: 600px) {
+  .ContactAnim-container {
+    height: 500px;
+    padding: 10px;
+  }
+
+  .circle-item {
+    width: 50px;
+    height: 50px;
+    margin: -25px;
+    --radius: 90px; /* ще менший радіус */
+  }
+}

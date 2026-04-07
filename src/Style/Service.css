@@ -1,12 +1,4 @@
-.Service-container{
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(3 , 300px);
-    gap: 50px;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 .service-card{
     background-color: rgb(54, 54, 54);
     height: 350px;
@@ -47,5 +39,51 @@
     100% {
         box-shadow: 0 0 20px #b584ff, 0 0 40px #b584ff, 0 0 40px #b584ff;
         transform: scaleY(2px);
+    }
+}
+.Service-container {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Для планшетів */
+@media (max-width: 1024px) {
+    .Service-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .service-card {
+        height: 320px;
+    }
+
+    .icon {
+        margin-left: 0;
+        font-size: 32px;
+    }
+}
+
+/* Для телефонів */
+@media (max-width: 600px) {
+    .Service-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .service-card {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .icon {
+        margin-left: 0;
+        font-size: 28px;
     }
 }

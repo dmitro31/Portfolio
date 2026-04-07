@@ -63,14 +63,44 @@
     }
 }
 
-@media (max-width: 480px) {
+
+/* Для планшетів */
+@media (max-width: 768px) {
     .Animation {
-        height: 300px;
+        height: 400px;
+        max-width: 100%;
     }
-    .Contact-container {
-        padding: 50px 10px;
+    .Contact-container h1 {
+        font-size: 2rem;
     }
     .Contact {
+        margin-top: 40px;
         padding: 20px;
+    }
+    .Contact p, .Contact a {
+        font-size: 1rem;
+    }
+}
+
+/* Для телефонів */
+@media (max-width: 480px) {
+    .Animation {
+        height: 250px;
+        max-width: 100%;
+    }
+    .Contact-container {
+        padding: 40px 10px;
+        gap: 20px;
+    }
+    .Contact {
+        padding: 15px;
+        margin-top: 30px;
+    }
+    .Contact-container h1 {
+        font-size: 1.6rem;
+    }
+    .Contact p, .Contact a {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 }

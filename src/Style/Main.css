@@ -93,3 +93,61 @@
         transform: scaleY(2px);
     }
 }
+/* Для планшетів */
+@media (max-width: 1024px) {
+    .Main-container {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Main-i {
+        margin: 40px 0 20px 0;
+    }
+
+    .Main-title {
+        font-size: 24px;
+    }
+
+    .Change-text {
+        font-size: 36px;
+    }
+
+    .Main-photo {
+        margin-left: 0;
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* Для телефонів */
+@media (max-width: 600px) {
+    .Main-container {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .Main-i {
+        margin: 20px 0;
+    }
+
+    .Main-title {
+        font-size: 20px;
+    }
+
+    .Change-text {
+        font-size: 28px;
+    }
+
+    .Main-photo {
+        width: 220px;
+        height: 220px;
+    }
+}

@@ -53,3 +53,55 @@
     line-height: 1.6;
     
 }
+/* Для планшетів і менших екранів */
+@media (max-width: 1024px) {
+  .About-container {
+    gap: 40px;
+    padding: 30px;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .About-Photo {
+    margin-right: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  .About-Info h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .About-Info span {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* Для телефонів */
+@media (max-width: 600px) {
+  .About-container {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .About-Photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .About-Info {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .About-Info h1 {
+    font-size: 28px;
+  }
+
+  .About-Info span {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}

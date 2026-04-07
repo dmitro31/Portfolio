@@ -24,3 +24,25 @@
 .title span{
    color: #8c52ff;
 }
+/* Для планшетів */
+@media (max-width: 1024px) {
+   .title {
+      margin-left: 40px;
+      font-size: 20px;
+   }
+   .Header-container {
+      height: 60px;
+   }
+}
+
+/* Для телефонів */
+@media (max-width: 600px) {
+   .title {
+      margin-left: 20px;
+      font-size: 18px;
+   }
+   .Header-container {
+      height: 55px;
+      padding: 0 10px;
+   }
+}
