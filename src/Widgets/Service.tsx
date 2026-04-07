@@ -1,6 +1,5 @@
 import { FaCode, FaPaintBrush, FaPenNib, FaServer, FaSearch, FaTools } from "react-icons/fa"
 import "../Style/Service.css"
-import { useState } from "react"
 
 export default function Service() {
     const services = [
