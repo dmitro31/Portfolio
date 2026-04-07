@@ -3,14 +3,6 @@ import "../Style/Service.css"
 import { useState } from "react"
 
 export default function Service() {
-    const scrollToContact = () => {
-        const contactSection = document.getElementById("contact")
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: "smooth" })
-        }
-    }
-
-
     const services = [
         {
             name: "Web Developer",
@@ -53,7 +45,6 @@ export default function Service() {
                     <div className="icon">{service.icon}</div>
                     <h3>{service.name}</h3>
                     <p>{service.text}</p>
-                    <button onClick={scrollToContact}>Замовити послугу</button>
                     </div>
                 </div>
                 
